@@ -92,9 +92,11 @@ void main() {
 - طباعة المتغير داخل نص
 ```dart
 void main() {
-   var name = 'Dhari';
+   var firstName = 'Dhari';
    var age = 23;
-   print('Name: $firstName, age: $age');
+  
+   print('Name: ' + firstName +' age: ' + age.toString());
+   print('Name: $firstName age: $age');
 }
 ```
 
