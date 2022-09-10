@@ -380,6 +380,21 @@ String printBio({required String name, required int age}) {
 }
 ```
 
+- default value (Optional)
+```dart
+void main() {
+  final bio1 = printBio(name: 'Dhari', age: 23);
+  print(bio1);
+
+  final bio2 = printBio(name: 'Dhari');
+  print(bio2);
+
+}
+
+String printBio({required String name, int age = 30}) {
+  return 'My name: $name, and my age: $age';
+}
+```
 
 ------------------------
 
