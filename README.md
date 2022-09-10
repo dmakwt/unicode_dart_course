@@ -227,7 +227,7 @@ void main() {
 
 ------------------------
 
-### List (Array)
+### List (Array) - المصفوفة عبارة عن متغير واحد مكون من عدة قيم من نفس النوع
 
 - Create List - the index start from zero
 ```dart
@@ -312,7 +312,7 @@ void main() {
 
 ------------------------
 
-### Function
+### Function - الدالة عبارة عن مجموعة أوامر مجمعينها بمكان واحد وتنفذ هالاوامر لمن نستدعي الدالة
 - create function
 ```dart
 void sayHi() {
