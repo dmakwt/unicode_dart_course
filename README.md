@@ -225,13 +225,183 @@ void main() {
 }
 ```
 
+------------------------
+
+### List (Array)
+
+- Create List - the index start from zero
+```dart
+void main() {
+  // List studentList = ['Dhari', 'Ahmed'];
+  var studentList = ['Dhari', 'Ahmed'];
+
+  print(studentList[0]);
+  print(studentList[1]);
+
+  // change the list value
+  studentList[0] = 'Mohammed';
+  print(studentList[0]);
+}
+
+```
+- List method - add(value)
+```dart
+void main() {
+  var studentList = ['Dhari', 'Ahmed'];
+  print(studentList);
+
+  studentList.add('Khaled');
+  print(studentList);
+}
+
+```
+
+- List method - insert(index, value)
+```dart
+void main() {
+  var studentList = ['Dhari', 'Ahmed'];
+  print(studentList);
+
+  studentList.insert(1, 'Nasser');
+  print(studentList);
+}
+
+```
+
+- List method - removeAt(index)
+```dart
+void main() {
+  var studentList = ['Dhari', 'Ahmed'];
+  print(studentList);
+  studentList.removeAt(1);
+  print(studentList);
+}
+```
+------------------------
+### Loops
+
+- For loop
+```dart
+void main() {
+  for (var i = 1; i <= 5; i++) {
+    print("Line $i");
+  }
+}
+```
+- print List values
+```dart
+void main() {
+  var studentList = ['Dhari', 'Ahmed', 'Mohammed'];
+
+  for (var i = 0; i < studentList.length; i++) {
+    print(studentList[i]);
+  }
+}
+```
+
+- 
+```dart
+void main() {
+  var studentList = ['Dhari', 'Ahmed', 'Mohammed'];
+
+  for (var student in studentList) {
+    print(student);
+  }
+}
+```
+
+------------------------
+
+### Function
+- create function
+```dart
+void sayHi() {
+  print('Hi');
+  print('Welcome');
+}
+
+void main() {
+  sayHi();
+  sayHi();
+  sayHi();
+}
+```
 
 
+- pass values inside function
+```dart
+void main() {
+  // Before
+  const name = 'Dhari';
+  const age = 23;
+  print('My name: $name, and my age: $age');
+
+  const name2 = 'Rashid';
+  const age2 = 26;
+  print('My name: $name2, and my age: $age2');
+
+  // After
+  printBio('Dhari', 23);
+  printBio('Rashid', 26);
+}
+
+void printBio(String name, int age) {
+  print('My name: $name, and my age: $age');
+}
+```
+
+- return value from function
+```dart
+void main() {
+  String bio = printBio('Dhari', 23);
+  print(bio);
+}
+
+String printBio(String name, int age) {
+  return 'My name: $name, and my age: $age';
+}
+```
+
+- positional argument vs named argument
+```dart
+void main() {
+  // before
+//   final bio = printBio('Dhari', 23);
+//   print(bio);
+
+  // After
+//   final bio = printBio(name: 'Dhari', age:23);
+  final bio = printBio(age: 23, name: 'Dhari');
+  print(bio);
+}
+
+String printBio({required String name, required int age}) {
+  return 'My name: $name, and my age: $age';
+}
+```
 
 
+------------------------
 
+- Create Map
+```dart
+void main() {
 
-
+ var person = {
+    'name': 'Dhari',
+    'age': 24,
+    'height': 174,
+  };
+  
+  // Keys not index
+  print(person['name']);
+  print(person['age']);
+  
+  // Change Map values
+  person['age'] = 40;
+  print(person);
+}
+```
 
 
 
