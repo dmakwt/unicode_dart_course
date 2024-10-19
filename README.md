@@ -44,16 +44,6 @@ void main() {
    print(age);
 }
 ```
-- dynamic
-```dart
-void main() {
-  dynamic name2 = 'Dhari';
-  print(name2);
-
-  name2 = 20;
-  print(name2);
-}
-```
 
 - var vs const
 
@@ -92,11 +82,13 @@ void main() {
 - طباعة المتغير داخل نص
 ```dart
 void main() {
-   var firstName = 'Dhari';
-   var age = 23;
+  String firstName = "Dhari";
+  String lastName = "Alenezi";
+  int age = 27;
   
-   print('Name: ' + firstName +' age: ' + age.toString());
-   print('Name: $firstName age: $age');
+  
+  print("Name: " + firstName + " " + lastName);
+  print("Name: $firstName $lastName");
 }
 ```
 
@@ -152,13 +144,12 @@ void main() {
 }
 ```
 
-- String methods - replaceAll()
+- String Properties - length
 ```dart
 void main() {
-  String myFood = 'I love pasta';
-  print(myFood);
-  String myFood2 = myFood.replaceAll('pasta', 'pizza');
-  print(myFood2);
+   String title = 'Flutter Course';
+  
+  print(title.length);
 }
 ```
 
@@ -200,11 +191,12 @@ void main(){
 ```dart
 void main(){
   print(!(10 > 5));
+  print(!false);
 }
 ```
 ------------------------
 
-### Part2 - Conditions
+Conditions
 
 - if condition
 ```dart
@@ -226,7 +218,7 @@ void main() {
 ```
 
 ------------------------
-
+### Part2 
 ### List (Array) - المصفوفة عبارة عن متغير واحد مكون من عدة قيم من نفس النوع
 
 - Create List - the index start from zero
